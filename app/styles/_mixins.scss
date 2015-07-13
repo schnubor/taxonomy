@@ -1,0 +1,8 @@
+@mixin gradient($one, $two, $three, $four, $five) {
+    background: -moz-linear-gradient(left, #ff0000 $one, #ff9d00 $two, #fff200 $three, #10ff00 $four, #5759e5 $five);
+    background: -webkit-gradient(linear, left top, right top, color-stop($one,#ff0000), color-stop($two,#ff9d00), color-stop($three,#fff200), color-stop($four,#10ff00), color-stop($five,#5759e5));
+    background: -webkit-linear-gradient(left, #ff0000 $one,#ff9d00 $two,#fff200 $three,#10ff00 $four,#5759e5 $five);
+    background: -o-linear-gradient(left, #ff0000 $one,#ff9d00 $two,#fff200 $three,#10ff00 $four,#5759e5 $five);
+    background: -ms-linear-gradient(left, #ff0000 $one,#ff9d00 $two,#fff200 $three,#10ff00 $four,#5759e5 $five);
+    background: linear-gradient(to right, #ff0000 $one,#ff9d00 $two,#fff200 $three,#10ff00 $four,#5759e5 $five);
+}

@@ -12,6 +12,8 @@ Reveal.initialize({
 
 // Slide changed
 Reveal.addEventListener( 'slidechanged', function( event ) {
-    var state = Reveal.getCurrentSlide();
-    console.log(state);
+    var currentSlide = Reveal.getCurrentSlide();
+    //genre = $(currentSlide).data('genre');
+    $('.reveal').addClass('grime');
+    console.log(currentSlide);
 } );
