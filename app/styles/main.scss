@@ -7,16 +7,5 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "mixins.scss";
 
 .reveal{
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-
-  &.default{
-    @include gradient(0%,25%,50%,75%,100%);
-  }
-
-  &.grime{
-    @include gradient(25%,30%,50%,75%,100%);
-  }
+  // @include gradient(0%,25%,50%,75%,100%);
 }
