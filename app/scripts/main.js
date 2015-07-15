@@ -7,6 +7,7 @@ var Grime = {
 };
 
 var currentGradient = Grime[2003];
+var animation;
 
 // Init Reveal.js
 Reveal.initialize({
@@ -20,14 +21,15 @@ Reveal.initialize({
 // Update Gradient
 var updateGradient = function(targetGradient){
     var interval = 0;
-
     var gradient_percent1 = currentGradient[0];
     var gradient_percent2 = currentGradient[1];
     var gradient_percent3 = currentGradient[2];
 
-    var interval_gradient = setInterval(function(){
+    clearInterval(animation);
+
+    animation = setInterval(function(){
         if(interval == 100){
-            clearInterval(interval_gradient);
+            clearInterval(animation);
             // set new current gradient
             currentGradient = targetGradient;
         }
@@ -56,7 +58,10 @@ var updateGradient = function(targetGradient){
         }
         // apply new values
         $('.reveal').css('background', 'linear-gradient(to right, #ff0000 0%,#ff9d00 '+gradient_percent1+'%,#fff200 '+gradient_percent2+'%,#10ff00 '+gradient_percent3+'%,#5759e5 100%)');
-        ++interval;
+        // update current gradient
+        currentGradient = [gradient_percent1, gradient_percent2, gradient_percent3];
+        // next cycle
+        interval++;
     }, 10);
 };
 
@@ -65,8 +70,7 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
     var slide = Reveal.getCurrentSlide()
     var genre = $(slide).data('genre');
     var year = $(slide).data('year');
-    console.log([genre, year]);
-    console.log(window[genre][year]);
+
     updateGradient(window[genre][year]);
 });
 
