@@ -42,7 +42,7 @@ var updateGradient = function(targetGradient){
             gradient_percent3++;
         }
         // apply new values
-        $('body').css('background', 'linear-gradient(to right, #c73d3d 0%,#75cadc '+gradient_percent1+'%,#f2e11a '+gradient_percent2+'%,#63ae5b '+gradient_percent3+'%,#0a64d0 100%)');
+        $('body').css('background', 'linear-gradient(to right, #c73d3d 0%,#75cadc '+gradient_percent1+'%,#0a64d0 '+gradient_percent2+'%,#63ae5b '+gradient_percent3+'%,#f2e11a 100%)');
         // update current gradient
         currentGradient = [gradient_percent1, gradient_percent2, gradient_percent3];
         // next cycle

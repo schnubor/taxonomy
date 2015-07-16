@@ -9,11 +9,10 @@
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <link rel="stylesheet" href="/bower_components/flowtime/css/flowtime.css" />
         <!-- build:css(.) styles/vendor.css -->
         <!-- bower:css -->
         <link rel="stylesheet" href="/bower_components/components-revealjs/css/reveal.css" />
-        <link rel="stylesheet" href="/bower_components/flowtime/css/flowtime.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
@@ -29,76 +28,104 @@
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <div class="flowtime">
-        <!-- 2003 -->
-        <div class="ft-section" data-title="2003">
-            <div class="ft-page">
-                <img src="/images/icons/time_travel_left.svg" alt="left" width: 35px; height:>
-                Section 1 / Page 1
+        <!-- Navigation -->
+        <nav>
+            <div class="class">
+                Class: <span class="js-genre">Grime</span>
             </div>
-            <div class="ft-page">
-                Section 1 / Page 2
+            <div class="timeNav">
+                <div class="button">
+                    <img src="/images/icons/time_travel_left.svg" alt="left" width: 35px; height:>
+                </div>
+                <div class="button">
+                    <img src="/images/icons/time_skip_left.svg" alt="left" width: 35px; height:>
+                </div>
+                <div class="currentYear js-currentYear">2003</div>
+                <div class="button">
+                    <img src="/images/icons/time_skip_right.svg" alt="left" width: 35px; height:>
+                </div>
+                <div class="button">
+                    <img src="/images/icons/time_travel_right.svg" alt="left" width: 35px; height:>
+                </div>
+            </div>
+            <div class="actions">
+                <ul>
+                    <li class="js-about"><img src="/images/icons/about.svg" alt="About"></li>
+                    <li class="js-newGenre"><img src="/images/icons/new_genre.svg" alt="New Genre"></li>
+                    <li class="js-newGenre"><img src="/images/icons/components.svg" alt="Components"></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--  CONTENT -->
+        <div class="flowtime">
+            <!-- 2003 -->
+            <div class="ft-section" data-title="2003">
+                <div class="ft-page">
+                    Section 1 / Page 1
+                </div>
+                <div class="ft-page">
+                    Section 1 / Page 2
+                </div>
+            </div>
+
+            <!-- 2004 -->
+            <div class="ft-section" data-title="2004">
+                <div class="ft-page">
+                    Section 2 / Page 1
+                </div>
+                <div class="ft-page">
+                    Section 2 / Page 2
+                </div>
+                <div class="ft-page">
+                    Section 2 / Page 3
+                </div>
             </div>
         </div>
-
-        <!-- 2004 -->
-        <div class="ft-section" data-title="2004">
-            <div class="ft-page">
-                <img src="/images/icons/time_travel_left.svg" alt="left" width: 35px; height:>
-                Section 2 / Page 1
-            </div>
-            <div class="ft-page">
-                Section 2 / Page 2
-            </div>
-            <div class="ft-page">
-                Section 2 / Page 3
-            </div>
-        </div>
-    </div>
     
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <script src="/bower_components/flowtime/js/brav1toolbox.js"></script>
-    <!-- bower:js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/components-revealjs/js/reveal.js"></script>
-    <script src="/bower_components/flowtime/js/flowtime.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+        <!-- build:js(.) scripts/vendor.js -->
+        <script src="/bower_components/flowtime/js/brav1toolbox.js"></script>
+        <!-- bower:js -->
+        <script src="/bower_components/modernizr/modernizr.js"></script>
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/components-revealjs/js/reveal.js"></script>
+        <script src="/bower_components/flowtime/js/flowtime.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
 
-    
-    <!-- build:js(.) scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-    <!-- endbuild -->
-    
+        
+        <!-- build:js(.) scripts/plugins.js -->
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+        <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+        <!-- endbuild -->
+        
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/data.js"></script>
-    <script src="scripts/gradient.js"></script>
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/data.js"></script>
+        <script src="scripts/gradient.js"></script>
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='https://www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-  </body>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
 </html>

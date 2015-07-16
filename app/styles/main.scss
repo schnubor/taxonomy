@@ -1,11 +1,83 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
+@font-face { font-family: Chivo; font-weight: 200; src: url('../fonts/Chivo-Light.otf'); }
+@font-face { font-family: Chivo; font-weight: 200; font-style: italic; src: url('../fonts/Chivo-LightItalic.otf'); }
+@font-face { font-family: Chivo; font-weight: 400; src: url('../fonts/Chivo-Regular.otf'); }
+@font-face { font-family: Chivo; font-weight: 400; font-style: italic; src: url('../fonts/Chivo-Italic.otf'); }
+@font-face { font-family: Chivo; font-weight: 600; src: url('../fonts/Chivo-Bold.otf'); }
+@font-face { font-family: Chivo; font-weight: 600; font-style: italic; src: url('../fonts/Chivo-BoldItalic.otf'); }
+@font-face { font-family: Chivo; font-weight: 800; src: url('../fonts/Chivo-Black.otf'); }
+@font-face { font-family: Chivo; font-weight: 800; font-style: italic; src: url('../fonts/Chivo-BlackItalic.otf'); }
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 @import "mixins.scss";
 
-.reveal{
-  // @include gradient(0%,25%,50%,75%,100%);
+body{
+    font-family: Chivo, sans-serif;
+    color: black;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    padding: 20px 40px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+
+    .class{
+        display: inline-block;
+        float: left;
+        font-weight: 600;
+        font-size: 24px;
+        color: black;
+    }
+
+    .timeNav{
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        width: 100%;
+
+        .button{
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        .currentYear{
+            display: inline-block;
+            color: white;
+            background-color: black;
+            font-weight: 400;
+            margin: 0 5px;
+            font-size: 24px;
+            padding: 5px 15px;
+            vertical-align: middle;
+        }
+    }
+
+    .actions{
+        display: inline-block;
+        float:right;
+        z-index: 2;
+
+        ul{
+            list-style-type: none;
+
+            li{
+                line-height: 32px;
+                height: 32px;
+                cursor: pointer;
+                display: inline-block;
+                margin-left: 20px;
+            }
+        }
+    }
 }
