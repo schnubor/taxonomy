@@ -1,3 +1,4 @@
+// FLowtime stuff
 Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
 
 function onNavigation(e){
@@ -5,6 +6,11 @@ function onNavigation(e){
     console.log([genre, year]);
     updateGradient(window[genre][year]);
 }
+
+// Navigation
+$('.js-toggleComponents').click(function(){
+    $('.components').fadeToggle();
+});
 
 
 
