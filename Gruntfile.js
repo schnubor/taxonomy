@@ -443,8 +443,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
-    'newer:eslint',
-    'test',
+    //'newer:eslint',
     'build'
   ]);
 };

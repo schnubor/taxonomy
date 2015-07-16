@@ -13,6 +13,7 @@
         <!-- build:css(.) styles/vendor.css -->
         <!-- bower:css -->
         <link rel="stylesheet" href="/bower_components/components-revealjs/css/reveal.css" />
+        <link rel="stylesheet" href="/bower_components/flowtime/css/flowtime.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
@@ -28,37 +29,41 @@
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    
-    <div class="reveal default">
-        <div class="slides">
-            <!-- GRIME 2003 -->
-            <section>
-                <section data-genre="Grime" data-year="2003">
-                    <h1>Grime 2003</h1>
-                </section>
-                <section>Rhythm Grime 2003</section>
-                <section>Melody Grime 2003</section>
-                <section>Assets Grime 2003</section>
-            </section>
-            
-            <!-- GRIME 2004 -->
-            <section>
-                <section data-genre="Grime" data-year="2004">
-                    <h1>Grime 2004</h1>
-                </section>
-                <section>Rhythm Grime 2004</section>
-                <section>Melody Grime 2004</section>
-                <section>Assets Grime 2004</section>
-            </section>
+    <div class="flowtime">
+        <!-- 2003 -->
+        <div class="ft-section" data-title="2003">
+            <div class="ft-page">
+                <img src="/images/icons/time_travel_left.svg" alt="left" width: 35px; height:>
+                Section 1 / Page 1
+            </div>
+            <div class="ft-page">
+                Section 1 / Page 2
+            </div>
+        </div>
+
+        <!-- 2004 -->
+        <div class="ft-section" data-title="2004">
+            <div class="ft-page">
+                <img src="/images/icons/time_travel_left.svg" alt="left" width: 35px; height:>
+                Section 2 / Page 1
+            </div>
+            <div class="ft-page">
+                Section 2 / Page 2
+            </div>
+            <div class="ft-page">
+                Section 2 / Page 3
+            </div>
         </div>
     </div>
     
 
     <!-- build:js(.) scripts/vendor.js -->
+    <script src="/bower_components/flowtime/js/brav1toolbox.js"></script>
     <!-- bower:js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/components-revealjs/js/reveal.js"></script>
+    <script src="/bower_components/flowtime/js/flowtime.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -81,6 +86,8 @@
     
 
     <!-- build:js scripts/main.js -->
+    <script src="scripts/data.js"></script>
+    <script src="scripts/gradient.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
 
