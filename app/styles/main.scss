@@ -37,6 +37,7 @@ nav{
         font-size: 20px;
         color: black;
         line-height: 38px;
+        margin-top: 10px;
     }
 
     .timeNav{
@@ -46,6 +47,7 @@ nav{
         text-align: center;
         width: 100%;
         line-height: 38px;
+        margin-top: 10px;
 
         .button{
             display: inline-block;
@@ -60,7 +62,7 @@ nav{
             font-weight: 400;
             margin: 0 5px;
             font-size: 20px;
-            padding: 5px 15px;
+            padding: 0px 15px;
             vertical-align: middle;
         }
     }
@@ -70,6 +72,7 @@ nav{
         float:right;
         z-index: 2;
         line-height: 38px;
+        margin-top: 10px;
 
         .menu{
             list-style-type: none;
@@ -97,4 +100,8 @@ nav{
             }
         }
     }
+}
+
+.content{
+    padding: 100px 40px 0;
 }
