@@ -7,7 +7,6 @@ $('.js-toggleComponents').click(function(){
 $('.js-navComp').click(function(){
     page = $(this).data('page');
     section = Flowtime.getSectionIndex();
-    console.log(section);
     Flowtime.gotoPage(section,page);
 });
 
