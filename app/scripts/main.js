@@ -1,16 +1,25 @@
+// Doc ready / Initialization
+$(function(){
+    Flowtime.start(2,0);
+    Flowtime.updateNavigation();
+    updateGradient(currentGradient);
+    updateNavigation(year);
+    $('[data-toggle="tooltip"]').tooltip()
+});
+
 // FLowtime stuff
 Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
 
 function onNavigation(e){
     year = $(e.section).data('title');
-    console.log([genre, year]);
+    section = e.sectionIndex;
+    page = e.pageIndex;
+    console.log([section,page]);
     updateGradient(window[genre][year]);
-}
 
-// Navigation
-$('.js-toggleComponents').click(function(){
-    $('.components').fadeToggle();
-});
+    // Update navigation
+    updateNavigation(year);
+}
 
 
 

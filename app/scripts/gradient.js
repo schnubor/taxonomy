@@ -1,7 +1,9 @@
-var currentGradient = Grime[2003];
 var animation = null;       // Animation interval
-var genre = 'Grime';
-var year = '2003';
+var genre = 'Grime';        // Start genre
+var year = null;         
+var section = 2;            // Start year: 2003
+var page = 0;               // Start page: Genre
+var currentGradient = Grime[2003];  // Start Gradient
 
 // Update Gradient
 var updateGradient = function(targetGradient){
@@ -49,8 +51,3 @@ var updateGradient = function(targetGradient){
         interval++;
     }, 10);
 };
-
-// Doc ready / Initialization
-$(function(){
-    updateGradient(currentGradient);
-});
