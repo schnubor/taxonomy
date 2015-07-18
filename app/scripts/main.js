@@ -1,13 +1,19 @@
 // Doc ready / Initialization
 $(function(){
-    Flowtime.start(2,0);
-    Flowtime.updateNavigation();
+    Flowtime.start(2,0);                    // Init Flowtime (2003, listen)
+    $('[data-toggle="tooltip"]').tooltip()  // Init tooltips
+
+    // Init
+    genre = 'Grime';
+    year = $(Flowtime.getSection()).data('title');
+    page = Flowtime.getPageIndex();
+    currentGradient = window[genre][year];
+
     updateGradient(currentGradient);
-    updateNavigation(year);
-    $('[data-toggle="tooltip"]').tooltip()
+    updateNavigation(genre,page,year); // Grime, 'listen' component, 2003
 });
 
-// FLowtime stuff
+// FLowtime Events
 Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
 
 function onNavigation(e){
@@ -18,7 +24,7 @@ function onNavigation(e){
     updateGradient(window[genre][year]);
 
     // Update navigation
-    updateNavigation(year);
+    updateNavigation(genre,page,year);
 }
 
 

@@ -1,9 +1,9 @@
-var animation = null;       // Animation interval
-var genre = 'Grime';        // Start genre
+var animation = null;          // Animation interval
+var genre = null;              // Start genre
 var year = null;         
-var section = 2;            // Start year: 2003
-var page = 0;               // Start page: Genre
-var currentGradient = Grime[2003];  // Start Gradient
+var section = null;            // Start year: 2003
+var page = null;               // Start page: Genre
+var currentGradient = null;    // Start Gradient
 
 // Update Gradient
 var updateGradient = function(targetGradient){

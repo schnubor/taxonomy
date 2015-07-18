@@ -3,8 +3,16 @@ $('.js-toggleComponents').click(function(){
     $('.components').fadeToggle();
 });
 
-function updateNavigation(year){
-    // Update navigation
+
+// Update navigation
+function updateNavigation(genre, component, year){
+    console.log([genre,component,year]);
+    // Update genre + section
+    var components = ['01. Listen','02. Rhythm','03. Visuals','04. Formats','05. Facts','06. Expansion']
+    $('.js-genre').text(genre);
+    $('.js-component').text(components[component]);
+
+    // Update year
     $('.js-currentYear').text(year);
     if(year == '2001'){
         $('.js-travelLeft, .js-skipLeft').animate({
