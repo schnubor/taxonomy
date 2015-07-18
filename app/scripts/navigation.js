@@ -1,8 +1,42 @@
-// Navigation
+// Toggle Components
 $('.js-toggleComponents').click(function(){
     $('.components').fadeToggle();
 });
 
+// Switch Component
+$('.js-navComp').click(function(){
+    page = $(this).data('page');
+    section = Flowtime.getSectionIndex();
+    console.log(section);
+    Flowtime.gotoPage(section,page);
+});
+
+// Skip to next year
+$('.js-skipRight').click(function(){
+    page = Flowtime.getPageIndex();
+    section = Flowtime.getSectionIndex();
+    Flowtime.gotoPage(section+1,page);
+});
+
+// Skip to previous year
+$('.js-skipLeft').click(function(){
+    page = Flowtime.getPageIndex();
+    section = Flowtime.getSectionIndex();
+    Flowtime.gotoPage(section-1,page);
+});
+
+// Travel to 2001
+$('.js-travelLeft').click(function(){
+    page = Flowtime.getPageIndex();
+    Flowtime.gotoPage(0,page);
+});
+
+// Travel to 2015
+$('.js-travelRight').click(function(){
+    page = Flowtime.getPageIndex();
+    length = $('.ft-section').length;
+    Flowtime.gotoPage(length-1,page);
+});
 
 // Update navigation
 function updateNavigation(genre, component, year){
@@ -18,10 +52,16 @@ function updateNavigation(genre, component, year){
         $('.js-travelLeft, .js-skipLeft').animate({
             opacity: 0
         }, 400);
+        $('.js-travelRight, .js-skipRight').animate({
+            opacity: 1
+        }, 400);
     }
     else if(year == '2003'){
         $('.js-travelRight, .js-skipRight').animate({
             opacity: 0
+        }, 400);
+        $('.js-travelLeft, .js-skipLeft').animate({
+            opacity: 1
         }, 400);
     }
     else{
