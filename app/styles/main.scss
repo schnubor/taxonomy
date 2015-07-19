@@ -105,3 +105,37 @@ nav{
 .content{
     padding: 100px 40px 0;
 }
+
+// Listen
+
+.playButton{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    position: absolute;
+    left: calc(50% - 100px);
+    top: calc(50% - 100px);
+    cursor: pointer;
+
+    img{
+        width: 100%
+    }
+
+    .rotator{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        -webkit-transform: rotate(0deg);
+
+        .circle{
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin: 0 auto;
+            margin-top: -8px;
+            background-color: white;
+        }
+    }
+}

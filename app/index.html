@@ -142,10 +142,12 @@
             <div class="ft-section" data-title="2003">
                 <div class="ft-page" class="genre">
                     <div class="content">
-                        <audio id="music" preload="true">
-                            <source src="http://www.alexkatz.me/codepen/music/interlude.mp3">
-                            <source src="http://www.alexkatz.me/codepen/music/interlude.ogg">
-                        </audio>
+                        <div class="playButton js-playListenBig" data-file="interlude">
+                            <div class="rotator">
+                                <div class="circle"></div>
+                            </div>
+                            <img src="/images/icons/play_audio.svg" alt="play">
+                        </div>
                     </div>
                 </div>
                 <div class="ft-page" class="rhythm">
@@ -175,6 +177,12 @@
                 </div>
             </div>
         </div>
+
+        <!-- Audio players -->
+        <audio id="music" preload="true">
+            <source src="http://www.alexkatz.me/codepen/music/interlude.mp3">
+            <source src="http://www.alexkatz.me/codepen/music/interlude.ogg">
+        </audio>
     
 
         <!-- build:js(.) scripts/vendor.js -->
@@ -209,6 +217,7 @@
         <script src="scripts/data.js"></script>
         <script src="scripts/gradient.js"></script>
         <script src="scripts/navigation.js"></script>
+        <script src="scripts/music.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 
