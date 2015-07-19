@@ -110,12 +110,12 @@ nav{
 
 .playButton{
     margin: 0 auto;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     position: relative;
     position: absolute;
-    left: calc(50% - 100px);
-    top: calc(50% - 100px);
+    left: calc(50% - 80px);
+    top: calc(50% - 80px);
     cursor: pointer;
 
     img{
@@ -137,5 +137,31 @@ nav{
             margin-top: -8px;
             background-color: white;
         }
+    }
+}
+
+// Popup
+
+#popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    padding: 100px 40px 40px;
+    display: none;
+
+    .js-close{
+        position: absolute;
+        right: 60px;
+        top: 110px;
+        color: black;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .popup-content{
+        height: 100%;
+        background-color: rgba(255,255,255,0.9);
+        overflow: auto;
     }
 }

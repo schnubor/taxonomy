@@ -350,6 +350,12 @@ module.exports = function (grunt) {
           cwd: '.',
           src: 'bower_components/bootstrap-sass/assets/fonts/bootstrap/*',
           dest: '<%= config.dist %>'
+        }, {
+          expand: true,
+          dot: true,
+          cwd: '.',
+          src: 'bower_components/flowtime/css/*',
+          dest: '<%= config.dist %>'
         }]
       }
     },
@@ -437,7 +443,6 @@ module.exports = function (grunt) {
     'uglify',
     'copy:dist',
     'modernizr',
-    'filerev',
     'usemin'
   ]);
 

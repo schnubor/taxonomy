@@ -50,7 +50,7 @@
             </div>
             <div class="actions">
                 <ul class="menu">
-                    <li class="js-about" data-toggle="tooltip" data-placement="bottom" title="About"><img src="/images/icons/about.svg" alt="About"></li>
+                    <li class="js-about js-popup" data-toggle="tooltip" data-placement="bottom" title="About" data-file="about"><img src="/images/icons/about.svg" alt="About"></li>
                     <li class="js-newGenre" data-toggle="tooltip" data-placement="bottom" title="New Genre"><img src="/images/icons/new_genre.svg" alt="New Genre"></li>
                     <li class="js-toggleComponents" data-toggle="tooltip" data-placement="bottom" title="Components">
                         <img src="/images/icons/components.svg" alt="Components">
@@ -142,7 +142,7 @@
             <div class="ft-section" data-title="2003">
                 <div class="ft-page" class="genre">
                     <div class="content">
-                        <div class="playButton js-playListenBig" data-file="interlude">
+                        <div class="playButton js-play" data-file="interlude">
                             <div class="rotator">
                                 <div class="circle"></div>
                             </div>
@@ -183,7 +183,14 @@
             <source src="http://www.alexkatz.me/codepen/music/interlude.mp3">
             <source src="http://www.alexkatz.me/codepen/music/interlude.ogg">
         </audio>
-    
+        
+        <!-- Popup -->
+        <div id="popup">
+            <div class="js-close">&#10005;</div>
+            <div class="popup-content">
+            
+            </div>
+        </div>
 
         <!-- build:js(.) scripts/vendor.js -->
         <script src="/bower_components/flowtime/js/brav1toolbox.js"></script>
@@ -218,6 +225,7 @@
         <script src="scripts/gradient.js"></script>
         <script src="scripts/navigation.js"></script>
         <script src="scripts/music.js"></script>
+        <script src="scripts/popup.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 
