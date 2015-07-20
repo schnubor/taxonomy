@@ -103,7 +103,13 @@ nav{
 }
 
 .content{
-    padding: 100px 40px 0;
+    margin: 50px 0;
+    padding: 40px;
+    height: calc(100% - 50px);
+
+    &.bg{
+        background-color: rgba(0,0,0,.2);
+    }
 
     h1,h2,h3{
         text-align: center;
