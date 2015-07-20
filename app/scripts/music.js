@@ -11,7 +11,7 @@ $('.js-play').click(function(){
     }
     else{
         player[0].pause();
-        $_self.find('img').attr('src', '/images/icons/play_audio.svg');
+        _self.find('img').attr('src', '/images/icons/play_audio.svg');
     }
 
     player[0].ontimeupdate = function(){
