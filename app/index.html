@@ -21,7 +21,6 @@
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
-    
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -50,8 +49,8 @@
             </div>
             <div class="actions">
                 <ul class="menu">
-                    <li class="js-about js-popup" data-toggle="tooltip" data-placement="bottom" title="About" data-file="aboutpage.png"><img src="/images/icons/about.svg" alt="About"></li>
                     <li class="js-newGenre" data-toggle="tooltip" data-placement="bottom" title="New Genre"><img src="/images/icons/new_genre.svg" alt="New Genre"></li>
+                    <li class="js-about js-popup" data-toggle="tooltip" data-placement="bottom" title="About" data-file="aboutpage.png"><img src="/images/icons/about.svg" alt="About"></li>
                     <li class="js-toggleComponents" data-toggle="tooltip" data-placement="bottom" title="Components">
                         <img src="/images/icons/components.svg" alt="Components">
                     </li>
@@ -59,10 +58,10 @@
                 <ul class="components">
                     <li class="js-navComp" data-page="0"><img src="/images/icons/01_genre.svg" alt="genre" data-toggle="tooltip" data-placement="left" title="Genre Home"></li>
                     <li class="js-navComp" data-page="1"><img src="/images/icons/02_rhythm.svg" alt="rhythm" data-toggle="tooltip" data-placement="left" title="Rhythm"></li>
-                    <li class="js-navComp" data-page="2"><img src="/images/icons/03_visuals.svg" alt="visuals" data-toggle="tooltip" data-placement="left" title="Visuals"></li>
-                    <li class="js-navComp" data-page="3"><img src="/images/icons/04_formats.svg" alt="formats" data-toggle="tooltip" data-placement="left" title="Formats"></li>
-                    <li class="js-navComp" data-page="4"><img src="/images/icons/05_facts.svg" alt="facts" data-toggle="tooltip" data-placement="left" title="Facts"></li>
-                    <li class="js-navComp" data-page="5"><img src="/images/icons/06_expansion.svg" alt="expansion" data-toggle="tooltip" data-placement="left" title="Expansion"></li>
+                    <li class="js-navComp" data-page="3"><img src="/images/icons/03_visuals.svg" alt="visuals" data-toggle="tooltip" data-placement="left" title="Visuals"></li>
+                    <li class="js-navComp" data-page="4"><img src="/images/icons/04_formats.svg" alt="formats" data-toggle="tooltip" data-placement="left" title="Formats"></li>
+                    <li class="js-navComp" data-page="5"><img src="/images/icons/05_facts.svg" alt="facts" data-toggle="tooltip" data-placement="left" title="Facts"></li>
+                    <li class="js-navComp" data-page="6"><img src="/images/icons/06_expansion.svg" alt="expansion" data-toggle="tooltip" data-placement="left" title="Expansion"></li>
                 </ul>
             </div>
         </nav>
@@ -156,29 +155,81 @@
                 <!-- Rhythm -->
                 <div class="ft-page" class="rhythm">
                     <div class="content">
-                        <div class="bg">
+                        <div class="mpc">
                             <p class="headline">Samples, Sounds &amp; Effects</p>
-                            <div class="mpc">
-                                <ul class="pads">
-                                    <li class="pad js-pad"><span>Bass 1</span></li>
-                                    <li class="pad js-pad"><span>Bass 1</span></li>
-                                    <li class="pad js-pad"><span>Bass 1</span></li>
-                                    <li class="pad js-pad"><span>Bass 1</span></li>
-                                    <li class="pad js-pad"><span>Bass 1</span></li>
-                                    <li class="pad js-pad"><span>Bass 1</span></li>
-                                    <li class="pad js-pad"><span>Bass 1</span></li>
-                                    <li class="pad js-pad"><span>Bass 1</span></li>
-                                    <li class="pad js-pad"><span>Bass 1</span></li>
-                                    <li class="pad js-pad"><span>Bass 1</span></li>
-                                    <li class="pad js-pad"><span>Bass 1</span></li>
-                                    <li class="pad js-pad"><span>Bass 1</span></li>
-                                    <li class="pad js-pad"><span>Bass 1</span></li>
-                                    <li class="pad js-pad"><span>Bass 1</span></li>
-                                    <li class="pad js-pad"><span>&nbsp;</span></li>
-                                    <li class="pad js-pad"><span>Bass 1</span></li>
-                                </ul>
-                            </div>
+                            <ul class="pads">
+                                <li class="pad js-pad breakbeat" data-file="01-kickdrum1 (Dizzee Rascal - I Luv U)">
+                                    <span>Kickdrum 1</span>
+                                    <img src="/images/icons/drumpad_link.svg" alt="link">
+                                </li>
+                                <li class="pad js-pad" data-file="02-kickdrum2 (wiley-ice_rink)">
+                                    <span>Kickdrum 2</span>
+                                    <img src="/images/icons/drumpad_link.svg" alt="link">
+                                </li>
+                                <li class="pad js-pad breakbeat" data-file="03-kickdrum3 (Tings in Boots)">
+                                    <span>Kickdrum 3</span>
+                                    <img src="/images/icons/drumpad_link.svg" alt="link">
+                                </li>
+                                <li class="pad js-pad" data-file="04-clap (Dizzee Rascal - I Luv U)">
+                                    <span>Clap</span>
+                                    <img src="/images/icons/drumpad_link.svg" alt="link">
+                                </li>
+                                <li class="pad js-pad" data-file="05-snare (wiley-morgue)">
+                                    <span>Snare</span>
+                                    <img src="/images/icons/drumpad_link.svg" alt="link">
+                                </li>
+                                <li class="pad js-pad" data-file="06-crash (wiley-ice_rink)">
+                                    <span>Crash</span>
+                                    <img src="/images/icons/drumpad_link.svg" alt="link">
+                                </li>
+                                <li class="pad js-pad white" data-file="07-hihat (Dizzee Rascal - Go)">
+                                    <span>Hi-hat</span>
+                                    <img src="/images/icons/drumpad_link.svg" alt="link">
+                                </li>
+                                <li class="pad js-pad white" data-file="08-klick (wiley-ice_rink)">
+                                    <span>Click</span>
+                                    <img src="/images/icons/drumpad_link.svg" alt="link">
+                                </li>
+                                <li class="pad js-pad breakbeat" data-file="09-bass1 (Breakdown - Wizzbit)">
+                                    <span>Bass 1</span>
+                                    <img src="/images/icons/drumpad_link.svg" alt="link">
+                                </li>
+                                <li class="pad js-pad" data-file="10-bass2 (Respect Me)">
+                                    <span>Bass 2</span>
+                                    <img src="/images/icons/drumpad_link.svg" alt="link">
+                                </li>
+                                <li class="pad js-pad ambient" data-file="11-flute (Respect Me)">
+                                    <span>Flute</span>
+                                    <img src="/images/icons/drumpad_link.svg" alt="link">
+                                </li>
+                                <li class="pad js-pad" data-file="12-strings (dexplicit-bullacake)">
+                                    <span>Strings</span>
+                                    <img src="/images/icons/drumpad_link.svg" alt="link">
+                                </li>
+                                <li class="pad js-pad dub" data-file="13-dubecho (darqwan-m-a___ximum_reespek)">
+                                    <span>Dub-Echo</span>
+                                    <a href="/dub"><img src="/images/icons/drumpad_link.svg" alt="link"></a>
+                                </li>
+                                <li class="pad js-pad dub" data-file="14-gunshot">
+                                    <span>Gunshot</span>
+                                    <img src="/images/icons/drumpad_link.svg" alt="link">
+                                </li>
+                                <li class="pad js-pad" data-file="15-vocal2 (Dizzee Rascal - I Luv U)">
+                                    <span>Vocal 1</span>
+                                    <img src="/images/icons/drumpad_link.svg" alt="link">
+                                </li>
+                                <li class="pad js-pad" data-file="16-vocal (bok_bok-silo_pass)">
+                                    <span>Vocal 2</span>
+                                    <img src="/images/icons/drumpad_link.svg" alt="link">
+                                </li>
+                            </ul>
                         </div>
+                    </div>
+                </div>
+                <!-- Rhythm -->
+                <div class="ft-page" class="melody">
+                    <div class="content">
+                        Melody
                     </div>
                 </div>
                 <!-- Visuals -->
@@ -193,6 +244,7 @@
                 <div class="ft-page" class="formats">
                     <div class="content">
                         2003 / Formats
+                        <div class="js-popup" data-file="video">VIDEO LINK</div>
                     </div>
                 </div>
                 <!-- Facts -->
@@ -212,9 +264,10 @@
 
         <!-- Audio players -->
         <audio id="music" preload="true">
-            <source src="http://www.alexkatz.me/codepen/music/interlude.mp3">
-            <source src="http://www.alexkatz.me/codepen/music/interlude.ogg">
+            <source src="/files/03-wiley-wot_do_u_call_it-khz.mp3">
         </audio>
+        <!-- Audio players -->
+        <audio id="mpc"></audio>
         
         <!-- Popup -->
         <div id="popup">
@@ -257,6 +310,7 @@
         <script src="scripts/gradient.js"></script>
         <script src="scripts/navigation.js"></script>
         <script src="scripts/music.js"></script>
+        <script src="scripts/mpc.js"></script>
         <script src="scripts/popup.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
