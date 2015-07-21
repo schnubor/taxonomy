@@ -339,8 +339,8 @@ module.exports = function (grunt) {
           cwd: '<%= config.app %>',
           dest: '<%= config.dist %>',
           src: [
-            '*.{ico,png,txt}',
-            'images/{,*/}*.webp',
+            '*.{ico,png,txt,wav,mp3}',
+            'images/{,*/}*.{webp,png}',
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*'
           ]
@@ -355,6 +355,12 @@ module.exports = function (grunt) {
           dot: true,
           cwd: '.',
           src: 'bower_components/flowtime/css/*',
+          dest: '<%= config.dist %>'
+        }, {
+          expand: true,
+          dot: true,
+          cwd: '.',
+          src: 'files/*',
           dest: '<%= config.dist %>'
         }]
       }
