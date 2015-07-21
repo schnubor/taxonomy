@@ -1,20 +1,27 @@
-function loop(){
-    $(".lines .kickdrum ul li").each(function (i) {
+var drumLoopSpeed = 500;
+
+function loop(line){
+    $(".lines ."+line+" ul li").each(function (i) {
         var $li = $(this);
-        setTimeout(function () { 
-            console.log($li);
-            $(".lines .kickdrum ul li").removeClass('active');
+        setTimeout(function () {
+            $(".lines ."+line+" ul li").removeClass('active');
             if($li.hasClass('ping')){
                 $li.addClass('active');
-            } 
-        }, 500 * (i + 1));
+            }
+        }, drumLoopSpeed * (i + 1));
 
         // restart loop
         if (i == 15) {
-            setTimeout(loop, 500 * (i + 1));
+            setTimeout(function(){
+                loop(line);
+            }, drumLoopSpeed * (i + 1));
         }
     });
 }
 
-loop();
-//loop2();
+loop('kickdrum');
+loop('snare');
+loop('hihat');
+loop('bass');
+loop('percussion1');
+loop('percussion2');
