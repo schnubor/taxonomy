@@ -143,7 +143,28 @@
                 <div class="ft-page" class="genre">
                     <div class="content listen">
                         <img src="/images/pfeile_grime2003.png" alt="arrows" class="arrows">
-                        <div class="miniplayers"></div>
+                        <div class="miniplayers">
+                            <div class="miniplayer one">
+                                <a href="/dub" class="linkCircle"></a>
+                                <img src="/images/icons/play_weiss.svg" alt="play miniplayer" class="js-miniPlayer" data-file="01 dancehall - Selah Collins – Pick A Sound">
+                            </div>
+                            <div class="miniplayer two">
+                                <a href="/hiphop" class="linkCircle"></a>
+                                <img src="/images/icons/play_weiss.svg" alt="play miniplayer" class="js-miniPlayer" data-file="02 hiphop Timbaland And Magoo - Cop That Shit (Feat Missy Elliott)">
+                            </div>
+                            <div class="miniplayer three">
+                                <a href="/house" class="linkCircle"></a>
+                                <img src="/images/icons/play_weiss.svg" alt="play miniplayer" class="js-miniPlayer" data-file="03 uk-garage Groove Chronicles - Shattered">
+                            </div>
+                            <div class="miniplayer four">
+                                <a href="/house" class="linkCircle"></a>
+                                <img src="/images/icons/play_weiss.svg" alt="play miniplayer" class="js-miniPlayer" data-file="04 2-step the club">
+                            </div>
+                            <div class="miniplayer five">
+                                <a href="/dub" class="linkCircle"></a>
+                                <img src="/images/icons/play_weiss.svg" alt="play miniplayer" class="js-miniPlayer" data-file="05 jungle Remarc-RIP">
+                            </div>
+                        </div>
                         <div class="playButton js-play" data-file="interlude">
                             <div class="rotator">
                                 <div class="circle"></div>
@@ -748,6 +769,7 @@
         <audio id="music" preload="true">
             <source src="/files/03-wiley-wot_do_u_call_it-khz.mp3">
         </audio>
+        <audio id="miniplayer"></audio>
         <!-- MPC -->
         <audio id="mpc"></audio>
         <!-- Drum Loop -->
@@ -800,6 +822,7 @@
         <script src="scripts/gradient.js"></script>
         <script src="scripts/navigation.js"></script>
         <script src="scripts/music.js"></script>
+        <script src="scripts/miniplayer.js"></script>
         <script src="scripts/mpc.js"></script>
         <script src="scripts/drum-loop.js"></script>
         <script src="scripts/melody-loop.js"></script>

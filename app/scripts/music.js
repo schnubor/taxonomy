@@ -3,7 +3,8 @@ var player = $('#music');
 $('.js-play').click(function(){
     var _self = $(this);
     var file = '/files/'+$(this).data('file')+'.mp3';
-    //player[0].src = file;
+    // stop other players
+    miniplayer[0].pause();
 
     if(player[0].paused){
         player[0].play();

@@ -58,3 +58,51 @@
         }
     }
 }
+
+// Miniplayer
+.miniplayer{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+
+    .linkCircle{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 1px dashed rgba(255,255,255,0.5);
+        position: absolute;
+    }
+
+    img{
+        position: absolute;
+        top: calc(50% - 21px);
+        left: calc(50% - 21px);
+        cursor: pointer;
+    }
+
+    &.one{
+        left: 27px;
+        top: 68px;
+    }
+
+    &.two{
+        left: 299px;
+        top: 450px;
+    }
+
+    &.three{
+        left: 685px;
+        top: 56px;
+    }
+
+    &.four{
+        left: 802px;
+        top: 146px;
+    }
+
+    &.five{
+        left: 1155px;
+        top: 286px;
+    }
+}
