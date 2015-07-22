@@ -79,3 +79,15 @@ nav{
         }
     }
 }
+
+.scrollDown{
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+
+    img{
+        cursor: pointer;
+    }
+}

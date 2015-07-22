@@ -69,3 +69,8 @@ function updateNavigation(genre, component, year){
         }, 400);
     }
 }
+
+// scroll down
+$('.js-down').click(function(){
+    Flowtime.next();
+});

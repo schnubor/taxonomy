@@ -26,6 +26,15 @@ function onNavigation(e){
 
     // Update navigation
     updateNavigation(genre,page,year);
+
+    // show/hide "down" button
+    console.log(Flowtime.getNextPage())
+    if(Flowtime.getNextPage()){
+        $('.js-down').fadeIn();
+    }
+    else{
+        $('.js-down').fadeOut();
+    }
 }
 
 
