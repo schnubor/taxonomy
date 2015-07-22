@@ -60,6 +60,14 @@
                     vertical-align: sub;
                     margin-left: -3.5px;
                     letter-spacing: 0px;
+
+                    &.paused{
+                        font-size: 35px;
+                        vertical-align: top;
+                        color: black;
+                        margin-left: 0;
+                        letter-spacing: 4px;
+                    }
                 }
             }
         }
