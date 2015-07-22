@@ -15,4 +15,5 @@ $('.js-popup').click(function(){
 
 $('.js-close').click(function(){
     $('#popup').fadeOut();
+    $('#popup').find('.popup-content').html('');
 });

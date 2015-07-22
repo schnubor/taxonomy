@@ -8,6 +8,13 @@ body{
     height: 100%;
     overflow: hidden;
 
+    .arrows{
+        width: 1090px;
+        position: absolute;
+        left: 95px;
+        top: 122px;
+    }
+
     .headline{
         color: white;
         font-size: 20px;
