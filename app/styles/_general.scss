@@ -14,4 +14,18 @@ body{
         margin-left: 8px;
         letter-spacing: 2px;
     }
+
+    .covers, .formats, .expansion{
+        padding: 40px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .facts{
+        img{
+            width: 100%;
+        }
+    }
 }
