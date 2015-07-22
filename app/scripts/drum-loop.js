@@ -1,8 +1,7 @@
 var drumLoopSpeed = 214;
 var drumLoopPlayer = $('#drum-loop');
 var keepGoing = true;
-var timer = [];
-var timer2 = 0;
+var timer = 0;
 
 $('.js-play-drum-loop').click(function(){
     var _self = $(this);
@@ -74,7 +73,6 @@ function startLoop(){
 
 function pauseLoop(){
     keepGoing = false;
-    clearTimeout(timer);
     $(".lines .line ul li").each(function (i) {
         var $li = $(this);
         $li.addClass('paused');
