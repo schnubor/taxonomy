@@ -47,6 +47,14 @@
             float: right;
             width: 470px;
 
+            .line.hihat{
+                li{
+                    font-size: 23px;
+                    vertical-align: top;
+                    margin-top: -5px;
+                }
+            }
+
             li{
                 display: inline-block;
                 height: 40px;
