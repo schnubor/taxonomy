@@ -15,7 +15,7 @@ body{
         letter-spacing: 2px;
     }
 
-    .covers, .formats, .expansion{
+    .formats{
         padding: 40px;
 
         img{
@@ -23,9 +23,54 @@ body{
         }
     }
 
-    .facts{
+    .covers{
+        padding: 0 40px 40px;
+        text-align: center;
+
+        .headline{
+            margin-bottom: 40px;
+            margin-left: 0;
+        }
+
+        img{
+            width: 90%
+        }
+    }
+
+    .facts, .expansion{
+        position: relative;
+
+        .interview{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 150px;
+            cursor: pointer;
+        }
+
+        .quote{
+            width: 62px;
+            height: 65px;
+            position: absolute;
+            top: 290px;
+            left: 574px;
+            cursor: pointer;
+        }
+
+        .video{
+            width: 95px;
+            height: 70px;
+            position: absolute;
+            top: 250px;
+            left: 1105px;
+            cursor: pointer;
+        }
+
         img{
             width: 100%;
         }
     }
+
+
 }
