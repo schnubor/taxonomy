@@ -1,4 +1,4 @@
-var drumLoopSpeed = 216;
+var drumLoopSpeed = 214;
 var drumLoopPlayer = $('#drum-loop');
 var keepGoing = true;
 var timer = [];
@@ -6,8 +6,6 @@ var timer2 = 0;
 
 $('.js-play-drum-loop').click(function(){
     var _self = $(this);
-    //var file = '/files/'+$(this).data('file')+'.mp3';
-    //player[0].src = file;
 
     if(drumLoopPlayer[0].paused){
         startLoop();

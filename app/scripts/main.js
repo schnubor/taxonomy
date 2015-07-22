@@ -2,6 +2,7 @@
 $(function(){
     Flowtime.start(2,0);                    // Init Flowtime (2003, listen)
     $('[data-toggle="tooltip"]').tooltip()  // Init tooltips
+    $('[data-toggle="popover"]').popover()  // Init Popovers
 
     // Init
     genre = 'Grime';
