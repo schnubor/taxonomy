@@ -1,0 +1,15 @@
+body.dubBg{
+    background-color: #e53c4e;
+}
+
+body.sinogrimeBg{
+    background: linear-gradient(to right, rgb(229, 60, 78) 10%, rgb(247, 146, 92) 41%, rgb(186, 124, 212) 64%, rgb(31, 199, 86) 100%, rgb(254, 229, 51) 100%);
+}
+
+body.sinogrimeBg h1{
+    font-size: 58px;
+}
+
+body.garageBg{
+    background: linear-gradient(to right, rgb(229, 60, 78) 3%,  rgb(186, 124, 212) 32%, rgb(31, 199, 86) 95%);
+}
