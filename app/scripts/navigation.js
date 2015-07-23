@@ -55,7 +55,7 @@ function updateNavigation(genre, component, year){
             opacity: 1
         }, 400);
     }
-    else if(year == '2003'){
+    else if(year == '2015'){
         $('.js-travelRight, .js-skipRight').animate({
             opacity: 0
         }, 400);
