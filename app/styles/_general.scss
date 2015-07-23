@@ -3,6 +3,11 @@ body{
     color: black;
 }
 
+.popover{
+    border-radius: 0;
+    border: none;
+}
+
 .content{
     padding: 100px 0 0;
     height: 100%;
@@ -48,12 +53,21 @@ body{
     .facts, .expansion{
         position: relative;
 
-        .interview{
+        .artist{
             width: 100px;
             height: 100px;
             position: absolute;
             top: 0;
-            left: 150px;
+            left: 40px;
+            cursor: pointer;
+        }
+
+        .interview{
+            width: 62px;
+            height: 65px;
+            position: absolute;
+            top: 290px;
+            left: 574px;
             cursor: pointer;
         }
 
@@ -61,8 +75,8 @@ body{
             width: 62px;
             height: 65px;
             position: absolute;
-            top: 290px;
-            left: 574px;
+            top: 320px;
+            left: 408px;
             cursor: pointer;
         }
 
