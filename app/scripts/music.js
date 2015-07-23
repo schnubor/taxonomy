@@ -37,6 +37,13 @@ $('.js-play').click(function(){
 $('.js-play2').click(function(){
     var _self = $(this);
     var file = '/files/'+$(this).data('file')+'.mp3';
+    
+    // fadeIn miniplayer and arrows
+    $('.arrows').fadeIn(1000);
+    $('.miniplayer').each(function(i){
+        $(this).delay(200*i).fadeIn(400);
+    });
+
     // stop other players
     miniplayer[0].pause();
     player[0].pause();
