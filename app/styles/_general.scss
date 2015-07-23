@@ -18,6 +18,7 @@ body{
     overflow: hidden;
 
     .arrows{
+        display: none;
         width: 1090px;
         position: absolute;
         left: calc(50% - 545px);

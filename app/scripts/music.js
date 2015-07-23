@@ -3,6 +3,11 @@ var player = $('#music');
 $('.js-play').click(function(){
     var _self = $(this);
     var file = '/files/'+$(this).data('file')+'.mp3';
+    // fadeIn miniplayer and arrows
+    $('.arrows').fadeIn(1000);
+    $('.miniplayer').each(function(i){
+        $(this).delay(200*i).fadeIn(400);
+    });
     // stop other players
     miniplayer[0].pause();
 
