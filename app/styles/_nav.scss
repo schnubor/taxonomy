@@ -62,7 +62,11 @@ nav{
                 height: 32px;
                 cursor: pointer;
                 display: inline-block;
-                margin-left: 20px;
+                margin-left: 10px;
+
+                img{
+                    width: 32px;
+                }
             }
         }
 
@@ -127,5 +131,10 @@ nav{
         &.lAmbient{ background-color: $ambient; }
         &.lHouse{ background-color: $house; }
         &.lHiphop{ background-color: $hiphop; }
+
+        a{
+            display: block; 
+            height: 100%
+        }
     }
 }

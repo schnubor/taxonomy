@@ -7,9 +7,15 @@ body.sinogrimeBg{
 }
 
 body.sinogrimeBg h1{
-    font-size: 58px;
+    width: 600px;
+    left: calc(50% - 300px);
 }
 
 body.garageBg{
     background: linear-gradient(to right, rgb(229, 60, 78) 3%,  rgb(186, 124, 212) 32%, rgb(31, 199, 86) 95%);
+}
+
+body.garageBg h1{
+    width: 660px;
+    left: calc(50% - 330px);
 }

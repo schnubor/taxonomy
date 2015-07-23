@@ -46,7 +46,7 @@ $('.js-travelRight').click(function(){
 function updateNavigation(genre, component, year){
     console.log([genre,component,year]);
     // Update genre + section
-    var components = ['01. Listen','02. Rhythm','02. Rhythm','03. Visuals','04. Formats','05. Facts','06. Expansion']
+    var components = ['01. Listen','02. Rhythm & Sound','02. Rhythm & Sound','03. Visual Aspects','04. Formats','05. Facts & Discourse','06. Expansion']
     $('.js-genre').text(genre);
     $('.js-component').text(components[component]);
 

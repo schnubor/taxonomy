@@ -5,6 +5,9 @@ var timer = 0;
 
 $('.js-play-drum-loop').click(function(){
     var _self = $(this);
+    // stop listen player
+    player[0].pause();
+    $('.js-play').find('img').attr('src', '/images/icons/play_audio.svg');
 
     if(drumLoopPlayer[0].paused){
         startLoop();
