@@ -3,6 +3,11 @@ $('.js-toggleComponents').click(function(){
     $('.components').fadeToggle();
 });
 
+// Toggle Legend
+$('.js-toggleLegend').click(function(){
+    $('.legend').fadeToggle();
+});
+
 // Switch Component
 $('.js-navComp').click(function(){
     page = $(this).data('page');

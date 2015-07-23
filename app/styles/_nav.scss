@@ -91,3 +91,41 @@ nav{
         cursor: pointer;
     }
 }
+
+// Legende
+
+.legendToggle{
+    position: fixed;
+    z-index: 3;
+    bottom: 30px;
+    right: 40px;
+    cursor: pointer;
+
+    img{
+        cursor: pointer;
+    }
+}
+
+.legend{
+    display: none;
+    list-style-type: none;
+    position: fixed;
+    right: 40px;
+    bottom: 60px;
+    z-index: 3;
+
+    li{
+        width: 34px;
+        height: 25px;
+        margin-bottom: 5px;
+        cursor: pointer;
+        z-index: 3;
+
+        &.lDub{ background-color: $dub; }
+        &.lTechno{ background-color: $techno; }
+        &.lBreakbeat{ background-color: $breakbeat; }
+        &.lAmbient{ background-color: $ambient; }
+        &.lHouse{ background-color: $house; }
+        &.lHiphop{ background-color: $hiphop; }
+    }
+}
