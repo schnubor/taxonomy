@@ -82,27 +82,27 @@
     }
 
     &.one{
-        left: 27px;
-        top: 68px;
+        left: calc(50% - 614px);
+        top: calc(50% - 270px);
     }
 
     &.two{
-        left: 299px;
-        top: 450px;
+        left: calc(50% - 342px);
+        top: calc(50% + 113px);
     }
 
     &.three{
-        left: 685px;
-        top: 56px;
+        left: calc(50% + 47px);
+        top: calc(50% - 280px);
     }
 
     &.four{
-        left: 802px;
-        top: 146px;
+        left: calc(50% + 163px);
+        top: calc(50% - 191px);
     }
 
     &.five{
-        left: 1155px;
-        top: 286px;
+        left: calc(50% + 514px);
+        top: calc(50% - 50px);
     }
 }
