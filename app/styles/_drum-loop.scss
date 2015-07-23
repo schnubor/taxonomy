@@ -60,21 +60,21 @@
                 height: 40px;
                 font-size: 35px;
                 line-height: 32px;
-                letter-spacing: 4px;
+                letter-spacing: 3px;
 
                 &.active{
                     font-size: 55px;
                     color: white;
                     vertical-align: sub;
                     margin-left: -3.5px;
-                    letter-spacing: 0px;
+                    letter-spacing: -1px;
 
                     &.paused{
                         font-size: 35px;
                         vertical-align: top;
                         color: black;
                         margin-left: 0;
-                        letter-spacing: 4px;
+                        letter-spacing: 3px;
                     }
                 }
             }
