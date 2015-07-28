@@ -73,9 +73,17 @@ function updateNavigation(genre, component, year){
             opacity: 1
         }, 400);
     }
+
+    // show/hide scroll down button
+    if (component === 6) {
+        $('.js-down').fadeOut();
+    } else {
+        $('.js-down').fadeIn();
+    }
 }
 
 // scroll down
 $('.js-down').click(function(){
     Flowtime.next();
 });
+

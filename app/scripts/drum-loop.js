@@ -35,7 +35,7 @@ $('.js-play-drum-loop').click(function(){
 });
 
 function loop(line){
-    console.log('start loop');
+    // console.log('start loop');
     if(keepGoing){
         $(".lines .line ul li").each(function (i) {
             var $li = $(this);

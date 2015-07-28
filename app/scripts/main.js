@@ -21,20 +21,11 @@ function onNavigation(e){
     year = $(e.section).data('title');
     section = e.sectionIndex;
     page = e.pageIndex;
-    console.log([section,page]);
+    // console.log([section,page]);
     updateGradient(window[genre][year]);
 
     // Update navigation
     updateNavigation(genre,page,year);
-
-    // show/hide "down" button
-    console.log(Flowtime.getNextPage())
-    if(Flowtime.getNextPage()){
-        $('.js-down').fadeIn();
-    }
-    else{
-        $('.js-down').fadeOut();
-    }
 }
 
 
